@@ -102,6 +102,7 @@ O sistema requer um arquivo CSV com dados do ENEM no formato especificado:
    ```bash
    python apv.py
    ```
+OBS. Coloque o arquivo csv na mesma pasta do projeto. Para facilitar a execução do projeto, recomenda-se usar o pycharn 
 
 ## Autor
 
