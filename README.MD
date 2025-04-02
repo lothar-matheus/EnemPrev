@@ -18,25 +18,48 @@ O projeto **Previsão de ENEM** utiliza o algoritmo **K-Nearest Neighbors (KNN)*
 * **Validação do modelo** : Avalia a precisão das previsões utilizando métricas apropriadas.
 * **Exportação de resultados** : Salva as previsões para futuras análises.
 
+## O Algoritmo K-NN (K-Nearest Neighbors)
+
+ O K-NN é um algoritmo de aprendizado supervisionado utilizado tanto para classificação quanto para regressão.
+Diferente de outros algoritmos que constroem um modelo generalizado durante o treinamento.
+
+##Principios do algorítimo
+
+### `Armazenamento:`
+
+O algoritmo memoriza todos os exemplos de treinamento (características e valores-alvo).
+
+### `Calculo da distância:`
+
+Quando um novo exemplo é apresentado, o algoritmo calcula a distância entre este novo ponto e todos os pontos do conjunto de treinamento.
+
+### `Seleção dos vizinhos:`
+
+Seleciona os K exemplos mais próximos (vizinhos).
+
+### `Previsão:`
+
+Para classificação: utiliza a classe mais frequente entre os K vizinhos.
+Para regressão (nosso caso): calcula a média (ou outra medida de tendência central) dos valores-alvo dos K vizinhos.
+
 ## Estrutura do Código
 
-O projeto possui as seguintes funções principais:
+O projeto possui as seguintes funcionalidades principais:
 
-### `load_data()`
+### `Entrada de dados customisável`
 
 Carrega e organiza os dados do ENEM 2023 para análise.
 
-### `process_data()`
+### `Ajuste do parâmetro para o usuário final`
 
-Realiza a limpeza e transformação dos dados para prepará-los ao modelo KNN.
 
-### `analyze_data()`
+### `Visualização()`
 
-Gera estatísticas descritivas e exploração dos dados para identificar padrões e correlações.
+Visualização textual da previsão das notas.
 
-### `train_knn_model()`
+### `Gráficos comparativos e analise de vizinhança`
 
-Treina o modelo **K-Nearest Neighbors (KNN)** utilizando os dados processados e realiza previsões de notas com base nos fatores socioeconômicos.
+Treina o modelo **K-Nearest Neighbors (KNN)** utilizando os dados processados e realiza previsões de notas e gera gráficos comparativos.
 
 #### **Sobre o Algoritmo KNN**
 
