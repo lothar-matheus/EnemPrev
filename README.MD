@@ -96,7 +96,7 @@ O sistema requer um arquivo CSV com dados do ENEM no formato especificado:
 
 1. Instale as dependências necessárias:
    ```bash
-   pip install pandas numpy scikit-learn matplotlib seaborn
+   pip install pandas numpy scikit-learn matplotlib
    ```
 2. Execute o script principal:
    ```bash
