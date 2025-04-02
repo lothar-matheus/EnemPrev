@@ -54,7 +54,7 @@ Para regressão (nosso caso): calcula a média (ou outra medida de tendência ce
 
 ## Estrutura do Código
 
-O projeto possui as seguintes funcionalidades principais:
+O projeto possui as seguintes funcionalidades para o usuário final:
 
 ### `Entrada de dados customisável`
 
