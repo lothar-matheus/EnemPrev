@@ -18,10 +18,20 @@ O projeto **Previsão de ENEM** utiliza o algoritmo **K-Nearest Neighbors (KNN)*
 * **Validação do modelo** : Avalia a precisão das previsões utilizando métricas apropriadas.
 * **Exportação de resultados** : Salva as previsões para futuras análises.
 
-## O Algoritmo K-NN (K-Nearest Neighbors)
+#### **Sobre o Algoritmo KNN**
 
- O K-NN é um algoritmo de aprendizado supervisionado utilizado tanto para classificação quanto para regressão.
-Diferente de outros algoritmos que constroem um modelo generalizado durante o treinamento.
+O KNN é um algoritmo de aprendizado supervisionado que classifica ou faz previsões com base nos "K" vizinhos mais próximos de um ponto de dados. Ele segue os seguintes passos:
+
+1. Calcula a distância entre um novo candidato e todos os outros candidatos do conjunto de treinamento.
+2. Seleciona os **K** vizinhos mais próximos.
+3. Para regressão, calcula a média das notas dos vizinhos para prever a nota do novo candidato.
+
+#### **Cálculos Utilizados na Função**
+
+* **Métrica de Distância** : Utiliza a **distância Euclidiana** para medir a proximidade entre os candidatos.
+* **Normalização** : Os dados são normalizados para garantir que todas as variáveis estejam na mesma escala.
+* **Divisão de Dados** : Separa os dados em conjunto de treinamento e teste.
+* **Validação** : Mede a precisão do modelo utilizando métricas como **erro absoluto médio (MAE)** e  **erro quadrático médio (MSE)** .
 
 ##Principios do algorítimo
 
@@ -53,41 +63,34 @@ Carrega e organiza os dados do ENEM 2023 para análise.
 ### `Ajuste do parâmetro para o usuário final`
 
 
-### `Visualização()`
-
 Visualização textual da previsão das notas.
 
 ### `Gráficos comparativos e analise de vizinhança`
 
 Treina o modelo **K-Nearest Neighbors (KNN)** utilizando os dados processados e realiza previsões de notas e gera gráficos comparativos.
 
-#### **Sobre o Algoritmo KNN**
-
-O KNN é um algoritmo de aprendizado supervisionado que classifica ou faz previsões com base nos "K" vizinhos mais próximos de um ponto de dados. Ele segue os seguintes passos:
-
-1. Calcula a distância entre um novo candidato e todos os outros candidatos do conjunto de treinamento.
-2. Seleciona os **K** vizinhos mais próximos.
-3. Para regressão, calcula a média das notas dos vizinhos para prever a nota do novo candidato.
-
-#### **Cálculos Utilizados na Função**
-
-* **Métrica de Distância** : Utiliza a **distância Euclidiana** para medir a proximidade entre os candidatos.
-* **Normalização** : Os dados são normalizados para garantir que todas as variáveis estejam na mesma escala.
-* **Divisão de Dados** : Separa os dados em conjunto de treinamento e teste.
-* **Validação** : Mede a precisão do modelo utilizando métricas como **erro absoluto médio (MAE)** e  **erro quadrático médio (MSE)** .
-
-### `validate_results()`
 
 Avalia o desempenho do modelo comparando as previsões com os valores reais.
-
-### `export_results()`
 
 Salva os resultados das previsões para um arquivo de saída (CSV, JSON, etc.).
 
 ## Tecnologias Utilizadas
 
 * **Linguagem:** Python
-* **Bibliotecas:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+* **Bibliotecas:** Pandas e NumPy: Manipulaçao e processamento de dados,
+Scikit-learn:Implementação do algoritmo K-NN e ferramentas de pré-processamento,
+Matplotlib:Geração de gráficos e visualizações,
+Tkinter: Construção da interface gráfica
+
+## Preparação dos Dados
+O sistema requer um arquivo CSV com dados do ENEM no formato especificado:
+
+*O arquivo deve ser nomeado "MICRODADOS_ENEM_2023_EDITADO.csv"
+*Deve conter as colunas mencionadas no código, incluindo:
+
+*Características categóricas: TP_COR_RACA, TP_ESCOLA, TP_ENSINO, SG_UF_ESC, etc.
+*Colunas de notas: NU_NOTA_CN, NU_NOTA_CH, NU_NOTA_LC, NU_NOTA_MT, NU_NOTA_REDACAO
+
 
 ## Como Executar
 
