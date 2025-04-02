@@ -105,4 +105,4 @@ O sistema requer um arquivo CSV com dados do ENEM no formato especificado:
 
 ## Autor
 
-Projeto desenvolvido por [Seu Nome].
+Projeto desenvolvido por Matheus Lemos.
