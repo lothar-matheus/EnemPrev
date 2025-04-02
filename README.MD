@@ -228,17 +228,6 @@ Uma vantagem significativa da abordagem K-NN no contexto educacional é a transp
 
 Esta interpretabilidade é fundamental em sistemas de apoio à decisão educacionais, onde confiança e compreensão do modelo são essenciais para sua adoção.
 
-#### 5. Limitações Intrínsecas ao Método:
-
-É importante destacar as limitações inerentes à abordagem:
-
-- O modelo assume que a similaridade nas características selecionadas implica em similaridade no desempenho, o que pode não capturar toda a complexidade do processo educacional
-- Fatores não mensurados como motivação, métodos de estudo, eventos pessoais e apoio familiar não são considerados, embora possam ter impacto significativo
-- O conjunto de dados, mesmo sendo representativo, pode não capturar todas as nuances regionais e temporais que afetam o desempenho no ENEM
-
-
-Estas limitações são explicitamente comunicadas ao usuário para garantir que as previsões sejam interpretadas como estimativas probabilísticas, não como determinações definitivas.
-
 ### Implicações Para Tomada de Decisão
 
 As previsões geradas pelo sistema podem informar diferentes níveis de tomada de decisão:
