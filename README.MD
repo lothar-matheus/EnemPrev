@@ -74,7 +74,34 @@ Avalia o desempenho do modelo comparando as previsões com os valores reais.
 
 Salva os resultados das previsões para um arquivo de saída (CSV, JSON, etc.).
 
-## Tecnologias Utilizadas
+##Implementação do código
+Neste projeto, utilizamos o K-NN para regressão, onde a meta é prever valores numéricos (notas do ENEM)
+baseados em características categóricas dos estudantes. Principais aspectos da implementação:
+
+### Pré-processamento de dados:
+
+
+## 1. Tecnologias Utilizadas
+
+* **Codificação de variáveis categóricas usando LabelEncoder** 
+* **Normalização dos dados com StandardScaler** 
+* **Normalização dos dados com StandardScaler** 
+* ** Tratamento de valores ausentes**
+
+## 2. Parametizaçã
+
+* **O usuário pode definir o valor de K (número de vizinhos a considerar)** 
+* **A métrica de distância utilizada é a distância euclidiana (padrão da implementação sklearn)** 
+
+## 3. Modelos independentes
+
+* **Um modelo K-NN separado é treinado para cada área de conhecimento do ENEM** 
+* **Esta abordagem permite capturar relações específicas entre as características do estudante e cada componente da prova*
+
+## 4. Analise de Vizinhaça
+
+* **Além da previsão, o sistema mostra a média dos K vizinhos mais próximos** 
+* **Permite uma comparação direta entre a previsão e os casos similares no conjunto de dados*
 
 * **Linguagem:** Python
 * **Bibliotecas:** Pandas e NumPy: Manipulaçao e processamento de dados,
